@@ -27,7 +27,7 @@ class PCDPublisher : public rclcpp::Node
 {
 public:
   using PointCloud2 = sensor_msgs::msg::PointCloud2;
-  using PointCloud2Ptr = PointCloud2::SharedPtr;
+  using PointCloud2Ptr = PointCloud2::UniquePtr;
   using PointCloud2ConstPtr = PointCloud2::ConstSharedPtr;
   PCDPublisher(const rclcpp::NodeOptions & node_options);
 
